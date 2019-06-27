@@ -1,0 +1,86 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+#lightbox_mask {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background: #000;
+    opacity: 0.5;
+    fliter: Alpha(opacity=50);
+    z-index: 10000000;
+    display: none;
+    cursor: pointer;
+}
+
+#lightbox_envelop {
+    position: fixed;
+    left: 50%;
+    display: none;
+    margin-left: -250px;
+    z-index: 100000001;
+    border-radius: 3px;
+    background: white;
+}
+
+.lightbox_picture {
+    box-sizing: content-box;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.lightbox_caption {
+    position: relative;
+    margin: 0 5px;
+    margin-top: -60px;
+}
+
+.lightbox_caption_area {
+    padding: 10px 5px;
+    color: #333;
+
+}
+
+.lightbox_pic_desc {
+    position: relative;
+    color: white
+}
+
+.lightbox_of_index {
+    color: white;
+}
+
+.lightbox_caption_close {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.lightbox_btn {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.lightbox_pre_btn {
+    left: 0;
+}
+
+.lightbox_next_btn {
+    right: 0;
+}
+
+

@@ -1,0 +1,51 @@
+/* 
+所有页面都有的共有属性
+ */
+body {
+    /*background-color:#f7f7f7;*/
+    /*font:13px/1.5 'Microsoft Yahei', 'Simsun';*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /*	color:#333;*/
+    word-break: break-all;
+    word-wrap: break-word;
+    outline: none;
+    resize: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.total_bottom {
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 35px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.total_bottom a:hover {
+    color: skyblue;
+}
+
+/* QQ登录 */
+.qq_log {
+    display: inline-block;
+    min-width: 76px;
+    line-height: 30px;
+    position: relative;
+    height: 24px;
+    float: left;
+    cursor: pointer;
+    background: url(../images/bt_blue_76X24.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+

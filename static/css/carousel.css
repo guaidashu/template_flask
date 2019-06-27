@@ -1,0 +1,128 @@
+.carousel {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.carousel:hover .btn_next {
+    display: block;
+}
+
+.carousel:hover .btn_pre {
+    display: block;
+}
+
+.carousel_img {
+    height: 300px;
+    width: 4200px;
+    position: relative;
+    left: -600px;
+}
+
+.carousel_img img {
+    height: 300px;
+    width: 600px;
+    float: left;
+}
+
+.btn_pre {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 15px;
+    cursor: pointer;
+    background-color: RGBA(0, 0, 0, .3);
+    display: none;
+}
+
+.btn_pre img {
+    margin-left: -10px;
+}
+
+.btn_pre:hover {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.btn_next {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 100%;
+    margin-left: -55px;
+    cursor: pointer;
+    background-color: RGBA(0, 0, 0, .3);
+    display: none;
+}
+
+.btn_next img {
+    margin-left: 10px;
+}
+
+.btn_next:hover {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.carousel_ul {
+    height: 22px;
+    width: 140px;
+    position: absolute;
+    top: 100%;
+    margin-top: -30px;
+    left: 100%;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+.carousel_ul li {
+    height: 22px;
+    width: 22px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 22px;
+    background-color: gray;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+.carousel_ul .carousel_active {
+    background-color: #ff4200;
+}
+
+.carousel_bottom {
+    height: 40px;
+    background-color: #000;
+    opacity: 0.6;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin-top: -40px;
+    left: 0px;
+    z-index: 0;
+}
+
+.carousel_p {
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    color: #fff;
+    margin-top: -40px;
+    padding-left: 15px;
+    font-size: 14px;
+    overflow: hidden;
+}

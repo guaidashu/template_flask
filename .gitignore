@@ -1,0 +1,7 @@
+.idea
+config/secure.py
+tool
+test
+**/__pycache__
+Pipfile
+Pipfile.lock
