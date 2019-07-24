@@ -67,6 +67,11 @@ class Reply(object):
         return Response(data, mimetype="application/json;charset=utf-8")
 
     @classmethod
+    def response(cls, data):
+        data = json.dumps(data, default=cls.object_to_dict)
+        return Response(data, mimetype="application/json;charset=utf-8")
+
+    @classmethod
     def object_to_dict(cls, value):
         data = {}
         if Reply._data_type == 1:
