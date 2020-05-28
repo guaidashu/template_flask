@@ -2,6 +2,8 @@
 author songjie
 """
 
+__all__ = ['ConversionDataType']
+
 
 class ConversionDataType(object):
     def __init__(self):

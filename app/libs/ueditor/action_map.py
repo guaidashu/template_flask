@@ -1,6 +1,7 @@
 """
 author songjie
 """
+__all__ = ['ActionMap']
 
 
 class ActionMap(object):

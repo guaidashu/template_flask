@@ -4,6 +4,8 @@ Create by yy on 2019
 from flask import current_app
 from qiniu import Auth, put_file
 
+__all__ = ['QiNiuYun']
+
 
 class QiNiuYun(object):
     """

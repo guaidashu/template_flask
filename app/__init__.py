@@ -11,6 +11,8 @@ from app.models.base import db
 
 login_manager = LoginManager()
 
+__all__ = ['create_app']
+
 
 def create_app():
     app = Flask(__name__)

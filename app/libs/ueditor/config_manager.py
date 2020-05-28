@@ -4,6 +4,8 @@ author songjie
 import json
 import re
 
+__all__ = ['ConfigManager']
+
 
 class ConfigManager(object):
     """

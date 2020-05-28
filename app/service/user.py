@@ -4,6 +4,8 @@ Created by yy on 2019-07-22
 from app import db
 from app.models.user import User
 
+__all__ = ['UserService']
+
 
 class UserService:
     """

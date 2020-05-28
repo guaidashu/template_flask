@@ -6,6 +6,8 @@ from wtforms.validators import Length, DataRequired, Email, ValidationError
 
 from app.models.user import User
 
+__all__ = ['RegisterForm']
+
 
 class RegisterForm(Form):
     nickname = StringField(

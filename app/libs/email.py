@@ -8,6 +8,8 @@ from flask_mail import Message, Mail
 
 mail = Mail()
 
+__all__ = ['send_async_email', 'send_email', 'send_test']
+
 
 def send_async_email(app, msg):
     with app.app_context():

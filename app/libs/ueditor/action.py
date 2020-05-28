@@ -6,6 +6,8 @@ from app.libs.ueditor.base_state import BaseState
 from app.libs.ueditor.config_manager import ConfigManager
 from app.libs.ueditor.uploader import Uploader
 
+__all__ = ['Action']
+
 
 class Action(object):
     def __init__(self, request, root_path, context_path, file_name):

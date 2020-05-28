@@ -4,6 +4,8 @@ author songjie
 from app.libs.ueditor.app_info import AppInfo
 from app.libs.ueditor.state import State
 
+__all__ = ['BaseState']
+
 
 class BaseState(State):
     def __init__(self, state, info_code):

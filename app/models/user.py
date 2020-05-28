@@ -9,6 +9,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from app.models.base import Base
 
+__all__ = ['User', 'get_user']
+
 
 class User(UserMixin, Base):
     """

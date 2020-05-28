@@ -3,6 +3,8 @@ author songjie
 """
 from app.libs.ueditor.state import State
 
+__all__ = ['UeditorJson']
+
 
 class UeditorJson(State):
     """

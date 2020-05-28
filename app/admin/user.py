@@ -1,8 +1,6 @@
 """
 author songjie
 """
-from flask import request
-
 from app.admin import admin
 
 

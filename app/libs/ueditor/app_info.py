@@ -2,6 +2,8 @@
 author songjie
 """
 
+__all__ = ['AppInfo']
+
 
 class AppInfo(object):
     _app_info = {

@@ -5,6 +5,8 @@ import json
 
 from flask import Response
 
+__all__ = ['Reply']
+
 
 class Reply(object):
     _result = None
@@ -64,6 +66,7 @@ class Reply(object):
             "msg": cls._msg
         }
         data = json.dumps(data, default=cls.object_to_dict)
+        cls.init()
         return Response(data, mimetype="application/json;charset=utf-8")
 
     @classmethod
@@ -76,6 +79,8 @@ class Reply(object):
         data = {}
         if Reply._data_type == 1:
             return value.__dict__
+        if Reply._data_type == 3:
+            return value.dict
         try:
             for column in value.__table__.columns:
                 data[column.name] = getattr(value, column.name)
@@ -112,3 +117,10 @@ class Reply(object):
         cls._msg = msg
         cls._result = ""
         return cls.json()
+
+    @classmethod
+    def init(cls):
+        cls._code = 0
+        cls._result = ""
+        cls._msg = ""
+        cls._data_type = 1

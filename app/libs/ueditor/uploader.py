@@ -9,7 +9,9 @@ from flask import current_app
 from app.libs.ueditor.qiniuyun import QiNiuYun
 from app.libs.ueditor.base_state import BaseState
 from app.libs.ueditor.ueditor_json import UeditorJson
-from tool.lib.function import md5, get_now_time_stamp, get_date_time
+from tool_yy.lib.function import md5, get_now_time_stamp, get_date_time
+
+__all__ = ['Uploader']
 
 
 class Uploader(object):
